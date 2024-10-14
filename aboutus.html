@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./logo.png" alt="TechHive Logo" width="60" height="50">
+            </a>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">
+                    <img src="./Search.png" alt="Search Icon and Button" width="30" height="30">
+                </button>
+            </form>
+            <div class="m-3">
+                <a class="nav-item" href="#" data-bs-toggle="modal" data-bs-target="#signinModal">Login</a>
+                <span> / </span>
+                <a class="nav-item" data-bs-toggle="modal" data-bs-target="#signupModal" href="#">Sign Up</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item m">
+                        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tech News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mobile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gaming</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Reviews</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <h2>About TechHive Hub</h2>
+        <p> At TechHive Hub, we are passionate about bringing you the latest updates on technology, mobile devices,
+            computers and gaming.
+            Our mission is to keep you informed and entertained with in-depth reviews, guides and news.
+        </p>
+    </div>
+    <div>
+        <h2>Our Values</h2>
+        <ul>
+            <li><span class="fw-bold">Reliability: </span>We provide accurate and unbiased infromation</li>
+            <li><span class="fw-bold">Innovation: </span>We follow the latest trends and new technologies</li>
+            <li><span class="fw-bold">Honesty: </span>Our reviews are genuine and based on real use</li>
+        </ul>
+    </div>
+    <div>
+        <h2>Our Team</h2>
+        <div class="d-flex align-items-center">
+            <img id="size" src="./Jim.jpg" class="img-thumbnail img-fluid"
+                alt="Picture of Dimitrios Paschalis, founder of TechHive Hub">
+            <div>
+                <h5>Dimitrios Paschalis</h5>
+                <br>
+                Tech Expert and Founder of TechHive Hub
+                <br>
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ullam doloribus dignissimos?
+                Corrupti eveniet cumque, recusandae nam nobis impedit,
+                vitae incidunt expedita assumenda officiis quam optio quo perspiciatis placeat iusto.
+            </div>
+        </div>
+    </div>
+    <footer class="row bg-light">
+        <hr>
+        <span class="col-5">
+            <a href="#"><img class="social" src="./facebook.png" alt="facebook link"></a>
+            <a href="#"><img class="social" src="./Instagram.png" alt="instagram link"></a>
+            <a href="#"><img class="social" src="./X.png" alt="X link"></a>
+        </span>
+        <span class="col-6"> &copy; Copyright 2024 </span>
+        <a class="col-1 text-decoration-none text-reset" href="./aboutus.html"> About Us</a>
+    </footer>
+
+    <!-- Modal Για το Sign In -->
+    <div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="signinModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signinModalLabel">Sign In</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Φόρμα σύνδεσης -->
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Pasword</label>
+                            <input type="password" class="form-control" id="password" placeholder="********">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Sign In</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal Για το Sign Up -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="********">
+                        </div>
+                        <div class="mb-3">
+                            <label for="confirmPassword" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirmPassword" placeholder="********">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

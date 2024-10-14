@@ -1,0 +1,59 @@
+.social{
+    width: 8%;
+}
+
+.aboutus{
+    justify-content: flex-end;
+}
+
+.copyright{
+    align-items: center;
+}
+
+#size{
+    width: 15%
+}
+
+#carouselExampleIndicators{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.carousel-inner {
+    height: 500px;
+}
+
+.carousel-item {
+    height: 100%;
+    position: relative;
+}
+
+.carousel-item img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+.border-col {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 0px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #948f9a;
+    margin-right: 5px;
+    height: 100%;
+}
+
+.border-col img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ccc;
+}
+
