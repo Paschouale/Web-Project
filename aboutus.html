@@ -13,28 +13,34 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
+
             <a class="navbar-brand" href="#">
                 <img src="./logo.png" alt="TechHive Logo" width="60" height="50">
             </a>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">
-                    <img src="./Search.png" alt="Search Icon and Button" width="30" height="30">
-                </button>
-            </form>
-            <div class="m-3">
-                <a class="nav-item" href="#" data-bs-toggle="modal" data-bs-target="#signinModal">Login</a>
-                <span> / </span>
-                <a class="nav-item" data-bs-toggle="modal" data-bs-target="#signupModal" href="#">Sign Up</a>
+
+            <div class="d-flex flex-grow-1 justify-content-center">
+                <form class="d-flex me-3">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">
+                        <img src="./Search.png" alt="Search Icon and Button" width="30" height="30">
+                    </button>
+                </form>
+                <div class="d-flex align-items-center">
+                    <a class="nav-item me-1" href="#" data-bs-toggle="modal" data-bs-target="#signinModal">Login</a>
+                    <span class="mx-1">/</span>
+                    <a class="nav-item" data-bs-toggle="modal" data-bs-target="#signupModal" href="#">Sign Up</a>
+                </div>
             </div>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item m">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
@@ -53,38 +59,89 @@
             </div>
         </div>
     </nav>
-    <div>
-        <h2>About TechHive Hub</h2>
+
+    <br>
+
+    <div class="bg-light py-3 py-md-5">
+        <h2 class="mb-4 display-5 text-center">About TechHive Hub</h2>
         <p> At TechHive Hub, we are passionate about bringing you the latest updates on technology, mobile devices,
             computers and gaming.
             Our mission is to keep you informed and entertained with in-depth reviews, guides and news.
         </p>
     </div>
-    <div>
-        <h2>Our Values</h2>
+
+    <br><br>
+
+    <div class="bg-light py-3 py-md-5">
+        <h2 class="mb-4 display-5 text-center">Our Values</h2>
         <ul>
             <li><span class="fw-bold">Reliability: </span>We provide accurate and unbiased infromation</li>
             <li><span class="fw-bold">Innovation: </span>We follow the latest trends and new technologies</li>
             <li><span class="fw-bold">Honesty: </span>Our reviews are genuine and based on real use</li>
         </ul>
     </div>
-    <div>
-        <h2>Our Team</h2>
-        <div class="d-flex align-items-center">
-            <img id="size" src="./Jim.jpg" class="img-thumbnail img-fluid"
-                alt="Picture of Dimitrios Paschalis, founder of TechHive Hub">
-            <div>
-                <h5>Dimitrios Paschalis</h5>
-                <br>
-                Tech Expert and Founder of TechHive Hub
-                <br>
-                <br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ullam doloribus dignissimos?
-                Corrupti eveniet cumque, recusandae nam nobis impedit,
-                vitae incidunt expedita assumenda officiis quam optio quo perspiciatis placeat iusto.
+
+    <br><br>
+
+    <div class="bg-light py-3 py-md-5">
+        <h2 class="mb-4 display-5 text-center">Our Team</h2>
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="d-flex">
+                            <img id="size" src="./Jim.jpg" class="img-thumbnail img-fluid"
+                                alt="Picture of Dimitrios Paschalis, founder of TechHive Hub">
+                            <div>
+                                <h5>Dimitrios Paschalis</h5>
+                                <br>
+                                Tech Expert and Founder of TechHive Hub
+                                <br>
+                                <br>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ullam doloribus
+                                dignissimos?
+                                Corrupti eveniet cumque, recusandae nam nobis impedit, vitae incidunt expedita assumenda
+                                officiis quam optio quo perspiciatis placeat iusto.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="d-flex">
+                            <img id="size" src="./Jane Doe.jpg" class="img-thumbnail img-fluid"
+                                alt="Picture of Jane Doe">
+                            <div>
+                                <h5>Jane Doe</h5>
+                                <br>
+                                Mobile Expert
+                                <br>
+                                <br>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas reprehenderit
+                                mollitia sed quas?
+                                Repellendus sunt ipsa sit delectus excepturi veniam enim iure,
+                                provident totam odio obcaecati error dignissimos dolores?
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
+
     </div>
+
+    <br><br>
+
+
     <footer class="row bg-light">
         <hr>
         <span class="col-5">
@@ -92,7 +149,8 @@
             <a href="#"><img class="social" src="./Instagram.png" alt="instagram link"></a>
             <a href="#"><img class="social" src="./X.png" alt="X link"></a>
         </span>
-        <span class="col-6"> &copy; Copyright 2024 </span>
+        <span class="col-5"> &copy; Copyright 2024 </span>
+        <a class="col-1 text-decoration-none text-reset" href="./contactus.html">Contact Us</a>
         <a class="col-1 text-decoration-none text-reset" href="./aboutus.html"> About Us</a>
     </footer>
 

@@ -19,16 +19,16 @@
     margin: 0 auto;
 }
 
-.carousel-inner {
+.inner {
     height: 500px;
 }
 
-.carousel-item {
+.item {
     height: 100%;
     position: relative;
 }
 
-.carousel-item img {
+.center-image {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -56,4 +56,3 @@
     height: auto;
     border-bottom: 2px solid #ccc;
 }
-
